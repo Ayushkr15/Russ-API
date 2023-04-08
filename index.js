@@ -7,7 +7,62 @@ const { response } = require("express");
 const app = express();
 
 const newspapers = [
-  // your existing newspapers array
+  {
+    name: "guardian",
+    address: "https://www.theguardian.com/world/ukraine",
+    base: "",
+  },
+  {
+    name: "bbc",
+    address: "https://www.bbc.com/news/world-60525350",
+    base: "https://www.bbc.com/",
+  },
+  {
+    name: "Washington Post",
+    address: "https://www.washingtonpost.com/world/ukraine-russia/",
+    base: "",
+  },
+  {
+    name: "CNBC",
+    address: "https://www.cnbc.com/europe-politics/",
+    base: "",
+  },
+  {
+    name: "Times of India",
+    address: "https://timesofindia.indiatimes.com/world/europe",
+    base: "https://timesofindia.indiatimes.com",
+  },
+  {
+    name: "Aljazeera",
+    address: "https://www.aljazeera.com/tag/ukraine-russia-crisis/",
+    base: "https://www.aljazeera.com",
+  },
+  {
+    name: "Ap News",
+    address:
+      "https://apnews.com/hub/russia-ukraine?utm_source=apnewsnav&utm_medium=featured",
+    base: "https://apnews.com/",
+  },
+  {
+    name: "The Hindu",
+    address: "https://www.thehindu.com/topic/russia-ukraine-crisis/",
+    base: "",
+  },
+  {
+    name: "Independent",
+    address: "https://www.independent.co.uk/news/world/europe",
+    base: "https://www.independent.co.uk",
+  },
+  {
+    name: "Abc News",
+    address: "https://abcnews.go.com/International",
+    base: "",
+  },
+  {
+    name: "Reuters",
+    address: "https://www.reuters.com/world/europe/",
+    base: "https://www.reuters.com/",
+  },
 ];
 
 const articles = [];
@@ -29,19 +84,8 @@ newspapers.forEach(newspaper => {
   });
 });
 
-// Define a new route for the landing page
 app.get("/", (req, res) => {
-  res.send(`
-    <html>
-      <head>
-        <title>Russia Ukraine Conflict news API</title>
-      </head>
-      <body>
-        <h1>Welcome to my Russia Ukraine Conflict news API</h1>
-        <p>This API provides news articles related to the ongoing conflict between Russia and Ukraine. You can use the /news endpoint to get all articles or the /news/:newspaperId endpoint to get articles from a specific newspaper.</p>
-      </body>
-    </html>
-  `);
+  res.json("Welcome to my Russia Ukraine Conflict news API");
 });
 
 app.get("/news", (req, res) => {
