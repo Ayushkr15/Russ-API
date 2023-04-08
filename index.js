@@ -86,15 +86,99 @@ newspapers.forEach(newspaper => {
 
 app.get("/", (req, res) => {
   res.send(`
-    <html>
-      <head>
-        <title>Russia Ukraine Conflict news API</title>
-      </head>
-      <body>
-        <h1>Welcome to my Russia Ukraine Conflict news API</h1>
-        <p>This API provides news articles related to the ongoing conflict between Russia and Ukraine. You can use the /news endpoint to get all articles or the /news/:newspaperId endpoint to get articles from a specific newspaper.</p>
-      </body>
-    </html>
+    <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>API</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #F7F7F7;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 36px;
+		}
+
+		main {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		h2 {
+			font-size: 24px;
+			margin-top: 30px;
+		}
+
+		p {
+			line-height: 1.5;
+			margin: 10px 0;
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+			margin-top: 20px;
+			font-weight: bold;
+		}
+
+		.btn:hover {
+			background-color: #444;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Welcome to Russia Ukraine Conflict News API</h1>
+	</header>
+	<main>
+		<h2>What is this API?</h2>
+		<p>This API is a tool that allows developers and normal users to access data from various news Publishers.</p>
+		<h2>How Does My API Work?</h2>
+		<p>Developers can use HTTP requests to retrieve data from My API. The API will then return the requested data in a JSON format, making it easy to work with in any programming language.</p>
+		<h2>Get Started with My API</h2>
+		<p>Ready to start using My API? Checkout all the end points</p>
+        <h3>1. To get all news:</h3>
+        <span><i>www.russapi.co/news</i><br></span>
+		<a href="www.russapi.co/news" class="btn">Get all news</a>
+        <h3>2. To get news from particular publishers: </h3>
+        <span><i>www.russapi.co/news/{publisher_name}</i><br></span>
+        <p><b>Available options are:</b></p>
+        <ul>
+            <li>The Guardian</li>
+            <li>BBC</li>
+            <li>Washington Post</li>
+            <li>CNBC</li>
+            <li>Times of India</li>
+            <li>Aljazeera</li>
+            <li>Ap News</li>
+            <li>The Hindu</li>
+            <li>Independent</li>
+            <li>Abc News</li>
+            <li>Reuters</li>
+        </ul>
+        <p><b>Example:</b></p>
+        <a href="www.russapi.co/news/bbc" class="btn">BBC</a>
+	</main>
+</body>
+</html>
+
   `);
 });
 
