@@ -85,7 +85,17 @@ newspapers.forEach(newspaper => {
 });
 
 app.get("/", (req, res) => {
-  res.json("Welcome to my Russia Ukraine Conflict news API");
+  res.send(`
+    <html>
+      <head>
+        <title>Russia Ukraine Conflict news API</title>
+      </head>
+      <body>
+        <h1>Welcome to my Russia Ukraine Conflict news API</h1>
+        <p>This API provides news articles related to the ongoing conflict between Russia and Ukraine. You can use the /news endpoint to get all articles or the /news/:newspaperId endpoint to get articles from a specific newspaper.</p>
+      </body>
+    </html>
+  `);
 });
 
 app.get("/news", (req, res) => {
