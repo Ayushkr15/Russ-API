@@ -156,7 +156,7 @@ app.get("/", (req, res) => {
 		<p>Ready to start using My API? Checkout all the end points</p>
         <h3>1. To get all news:</h3>
         <span><i>www.russapi.co/news</i><br></span>
-		<a href="www.russapi.co/news" class="btn">Get all news</a>
+		<a href="/news" class="btn">Get all news</a>
         <h3>2. To get news from particular publishers: </h3>
         <span><i>www.russapi.co/news/{publisher_name}</i><br></span>
         <p><b>Available options are:</b></p>
@@ -174,7 +174,7 @@ app.get("/", (req, res) => {
             <li>Reuters</li>
         </ul>
         <p><b>Example:</b></p>
-        <a href="www.russapi.co/news/bbc" class="btn">BBC</a>
+        <a href="/news/bbc" class="btn">BBC</a>
 	</main>
 </body>
 </html>
