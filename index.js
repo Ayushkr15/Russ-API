@@ -284,7 +284,7 @@ app.get("/doc", (req, res) => {
 		body {
 			margin: 0;
 			padding: 0;
-			font-family: Arial, sans-serif;
+			font-family: Georgia, serif;
 			background-color: #F4EEE0;
 		}
 
