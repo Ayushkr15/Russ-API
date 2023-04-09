@@ -286,7 +286,7 @@ app.get("/doc", (req, res) => {
 			margin: 0;
 			padding: 0;
 			font-family: Verdana, sans-serif;
-			background-color: #F4EEE0;
+			background-color: #E9D5DA;
 		}
 
 		header {
