@@ -119,6 +119,7 @@ app.get("/", (req, res) => {
 			gap: 20px 50px;
 			place-content: center;
 			align-items: end;
+      font-family: Helvetica, sans-serif;
 		}
 
 		.title {
@@ -284,7 +285,7 @@ app.get("/doc", (req, res) => {
 		body {
 			margin: 0;
 			padding: 0;
-			font-family: Georgia, serif;
+			font-family: Verdana, sans-serif;
 			background-color: #F4EEE0;
 		}
 
