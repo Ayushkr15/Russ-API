@@ -88,9 +88,188 @@ app.get("/", (req, res) => {
   res.send(`
     <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<title>API</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"      
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+	   
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"      
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+	<style>
+		body {
+			height: 100vh;
+			margin: 0;
+			display: grid;
+			grid-template-columns: auto auto;
+			gap: 20px 50px;
+			place-content: center;
+			align-items: end;
+		}
+
+		.title {
+			width: 60%;
+			margin-top: 100px;
+			margin-left: 30px
+		}
+
+		.hover-2 {
+			--c: white;
+			/* the color */
+			--b: .1em;
+			/* border length*/
+			--d: 20px;
+			/* the cube depth */
+
+			--_s: calc(var(--d) + var(--b));
+
+			color: var(--c);
+			border: solid #0000;
+			border-width: var(--b) var(--b) var(--_s) var(--_s);
+			background:
+				conic-gradient(at left var(--d) bottom var(--d),
+					#0000 90deg, rgb(255 255 255 /0.3) 0 225deg, rgb(255 255 255 /0.6) 0) border-box,
+				conic-gradient(at left var(--_s) bottom var(--_s),
+					#0000 90deg, var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b)) border-box;
+			transform: translate(calc(var(--d)/-1), var(--d));
+			clip-path:
+				polygon(var(--d) 0%,
+					var(--d) 0%,
+					100% 0%,
+					100% calc(100% - var(--d)),
+					100% calc(100% - var(--d)),
+					var(--d) calc(100% - var(--d)));
+			transition: 0.5s;
+		}
+
+		.hover-2:hover {
+			transform: translate(0, 0);
+			clip-path:
+				polygon(0% var(--d),
+					var(--d) 0%,
+					100% 0%,
+					100% calc(100% - var(--d)),
+					calc(100% - var(--d)) 100%,
+					0% 100%);
+		}
+
+		h3 {
+			font-family: system-ui, sans-serif;
+			font-size: 4rem;
+			margin: 0 auto;
+			cursor: pointer;
+			padding: 0 .1em;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 36px;
+		}
+
+		main {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		h2 {
+			font-size: 24px;
+			margin-top: 30px;
+		}
+
+		p {
+			line-height: 1.5;
+			margin: 10px 0;
+		}
+
+		.btn {
+			display: inline-block;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+			margin-top: 20px;
+			font-weight: bold;
+			margin-left: 30px;
+		}
+
+		.btn:hover {
+			background-color: #444;
+		}
+
+		#vanta {
+			z-index: 0;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+	<script>
+		window.addEventListener('DOMContentLoaded', () => {
+			VANTA.GLOBE({
+				el: "#vanta",
+				mouseControls: true,
+				touchControls: true,
+				gyroControls: false,
+				minHeight: 200.00,
+				minWidth: 200.00,
+				scale: 1.00,
+				scaleMobile: 1.00
+			})
+		})
+	</script>
+</head>
+
+<body>
+	<div id="vanta">
+		<div class="title">
+			<h3 class="hover-2">Welcome to Russia Ukraine Conflict News API</h3>
+		</div>
+
+		<button type="button" class=" btn bg-secondary" href="/doc">Know more</button>
+
+
+	</div>
+
+
+	<script>
+		var cursor = document.querySelector(".cursor");
+		var cursor2 = document.querySelector(".cursor2");
+		document.addEventListener("mousemove", function (e) {
+			cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+		});
+	</script>
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" 
+		integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+		crossorigin="anonymous"></script>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" 
+		integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+  `);
+});
+
+app.get("/doc", (req, res) => {
+  res.send(`
+    <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>RussAPI</title>
 	<style>
 		body {
 			margin: 0;
@@ -145,7 +324,7 @@ app.get("/", (req, res) => {
 </head>
 <body>
 	<header>
-		<h1>Welcome to Russia Ukraine Conflict News API</h1>
+		<h1>How to use Russ API </h1>
 	</header>
 	<main>
 		<h2>What is this API?</h2>
