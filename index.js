@@ -286,11 +286,11 @@ app.get("/doc", (req, res) => {
 			margin: 0;
 			padding: 0;
 			font-family: Verdana, sans-serif;
-			background-color: #D4ECDD;
+			background-color: #F4EEE0;
 		}
 
 		header {
-			background-color: #333;
+			background-color: #6D5D6E;
 			color: #fff;
 			padding: 20px;
 			text-align: center;
