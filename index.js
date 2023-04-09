@@ -112,13 +112,13 @@ app.get("/", (req, res) => {
 		crossorigin="anonymous"></script>
 	<style>
 		body {
-			height: 100vh;
 			margin: 0;
-			display: grid;
-			grid-template-columns: auto auto;
-			gap: 20px 50px;
-			place-content: center;
-			align-items: end;
+      padding: 0;
+			// display: grid;
+			// grid-template-columns: auto auto;
+			// gap: 20px 50px;
+			// place-content: center;
+			// align-items: end;
       font-family: Helvetica, sans-serif;
 		}
 
