@@ -232,8 +232,7 @@ app.get("/", (req, res) => {
 			<h3 class="hover-2">Welcome to Russia Ukraine Conflict News API</h3>
 		</div>
 
-	 <a href="/doc" class="btn">Know more</a>
-
+    <a href="/doc" class="btn bg-secondary">Know more</a>
 
 	</div>
 
