@@ -285,7 +285,7 @@ app.get("/doc", (req, res) => {
 			margin: 0;
 			padding: 0;
 			font-family: Arial, sans-serif;
-			background-color: #F7F7F7;
+			background-color: #F4EEE0;
 		}
 
 		header {
@@ -341,8 +341,8 @@ app.get("/doc", (req, res) => {
 		<p>This API is a tool that allows developers and normal users to access data from various news Publishers.</p>
 		<h2>How Does My API Work?</h2>
 		<p>Developers can use HTTP requests to retrieve data from My API. The API will then return the requested data in a JSON format, making it easy to work with in any programming language.</p>
-		<h2>Get Started with My API</h2>
-		<p>Ready to start using My API? Checkout all the end points</p>
+		<h2>Get Started with RussAPI</h2>
+		<p>Ready to start using RussAPI? Checkout all the end points</p>
         <h3>1. To get all news:</h3>
         <span><i>www.russapi.co/news</i><br></span>
 		<a href="/news" class="btn">Get all news</a>
