@@ -111,7 +111,7 @@ app.get("/", (req, res) => {
 		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
 		crossorigin="anonymous"></script>
 	<style>
-		body {
+		body, html  {
 			margin: 0;
       padding: 0;
 			// display: grid;
@@ -121,7 +121,12 @@ app.get("/", (req, res) => {
 			// align-items: end;
       font-family: Helvetica, sans-serif;
 		}
-
+      body {
+        background-size: cover;
+        overflow: hidden;
+        height: 100%;
+      }
+      
 		.title {
 			width: 60%;
 			margin-top: 100px;
