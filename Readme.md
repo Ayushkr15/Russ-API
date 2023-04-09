@@ -37,7 +37,10 @@ For easy access you can follow these steps-:
 
 
 
-![1](https://user-images.githubusercontent.com/88913986/230758262-91b38c49-10ad-41f0-8115-57d1f5c8a839.png)
+
+
+https://user-images.githubusercontent.com/88913986/230758415-c11ec7eb-7642-4048-bbc4-c1d448552877.mp4
+
 
 
 The Russia Ukraine News API is a web-based application programming interface (API) that provides developers with access to the latest news articles and updates related to the ongoing conflict between Russia and Ukraine. This API can be integrated into any application or platform to provide users with up-to-date information on the situation.The API provides real-time access to news articles from a variety of sources, including major news outlets and  local news outlets. The API also includes features such as  filtering by publishers, allowing users to narrow down their news feeds to specific topics.In addition to providing news articles, the Russia Ukraine News API also includes analytical data and visualizations that can be used to gain insights into the conflict. This data can be accessed through the API or integrated into other applications and platforms.
