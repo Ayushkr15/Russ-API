@@ -232,7 +232,7 @@ app.get("/", (req, res) => {
 			<h3 class="hover-2">Welcome to Russia Ukraine Conflict News API</h3>
 		</div>
 
-		<button type="button" class=" btn bg-secondary" href="www.russapi.co/doc">Know more</button>
+	 <a href="/doc" class="btn">Know more</a>
 
 
 	</div>
