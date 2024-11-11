@@ -32,20 +32,6 @@ For easy access you can follow these steps-:
 -Abc News
 -Reuters
 
-
-
-
-
-![Untitled video - Made with Clipchamp](https://user-images.githubusercontent.com/88913986/230758504-a7799a7f-8109-4673-bd86-dc7113702719.gif)
-
-
-
-
-
-
-
-
-
 The Russia Ukraine News API is a web-based application programming interface (API) that provides developers with access to the latest news articles and updates related to the ongoing conflict between Russia and Ukraine. This API can be integrated into any application or platform to provide users with up-to-date information on the situation.The API provides real-time access to news articles from a variety of sources, including major news outlets and  local news outlets. The API also includes features such as  filtering by publishers, allowing users to narrow down their news feeds to specific topics.In addition to providing news articles, the Russia Ukraine News API also includes analytical data and visualizations that can be used to gain insights into the conflict. This data can be accessed through the API or integrated into other applications and platforms.
 The API is designed to be user-friendly and easy to integrate into any application or platform. It uses RESTful architecture and can be accessed using HTTP requests. The API documentation is also provided, which includes sample code snippets and guides to help developers integrate the API into their applications.
 
